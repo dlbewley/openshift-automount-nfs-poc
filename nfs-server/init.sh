@@ -8,8 +8,8 @@ mount -t nfsd nfds /proc/fs/nfsd
 
 # Start nfs daemons
 /usr/sbin/rpcbind -w
-/usr/sbin/rpc.mountd -N 2 -V 3
-/usr/sbin/rpc.nfsd -G 10 -N 2 -V 3
+/usr/sbin/rpc.mountd -V 3
+/usr/sbin/rpc.nfsd -G 10 -V 3
 /usr/sbin/rpc.statd --no-notify
 
 # Create directories
