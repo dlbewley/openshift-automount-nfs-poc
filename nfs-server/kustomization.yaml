@@ -8,6 +8,11 @@ configMapGenerator:
   files:
   - init.sh
 
+images:
+  - name: quay.io/noseka1/openshift-toolbox
+    newName: quay.io/noseka1/toolbox-container
+    newTag: basic
+
 resources:
 - nfs-server-deploy.yaml
 - nfs-server-exports-pvc.yaml
