@@ -23,6 +23,11 @@ spec:
           mountPath: /toolbox
         - name: exports
           mountPath: /exports
+        command:
+          - /bin/sh
+        args:
+          - -x
+          - /toolbox/init.sh
       serviceAccountName: nfs-server
       volumes:
       - name: init

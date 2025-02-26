@@ -30,3 +30,5 @@ exportfs -r
 
 # Show current nfs exports
 showmount -e
+
+sleep infinity
