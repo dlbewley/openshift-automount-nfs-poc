@@ -23,6 +23,11 @@ spec:
           mountPath: /mnt
           # HostToContainer mount propagation is required
           mountPropagation: HostToContainer
+        command:
+          - /bin/sh
+        args:
+          - -x
+          - /toolbox/init.sh
       serviceAccountName: test-pod
       volumes:
       - name: init
