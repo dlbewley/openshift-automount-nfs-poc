@@ -15,6 +15,11 @@ spec:
       - name: automount
         image: quay.io/noseka1/openshift-toolbox:basic
         imagePullPolicy: Always
+        command:
+          - /bin/sh
+        args:
+          - -x
+          - /toolbox/run.sh
         securityContext:
           privileged: true
         volumeMounts:
