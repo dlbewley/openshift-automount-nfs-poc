@@ -10,8 +10,10 @@ configMapGenerator:
 
 images:
   - name: quay.io/noseka1/openshift-toolbox
-    newName: quay.io/noseka1/toolbox-container
-    newTag: basic
+    #newName: quay.io/noseka1/toolbox-container
+    #newTag: basic
+    newName: quay.io/dbewley/nfs-utils
+    newTag: latest
 
 resources:
 - nfs-server-deploy.yaml
