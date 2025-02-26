@@ -4,7 +4,7 @@
 dnf install --assumeyes \
   autofs \
   nfs-utils \
-  openldap-clients # currently unused
+#  openldap-clients # currently unused
 
 mkdir -p /mnt/automount
 
