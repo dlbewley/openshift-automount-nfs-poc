@@ -1,0 +1,11 @@
+FROM registry.redhat.io/ubi9/ubi:latest
+
+RUN dnf install \
+        -y \
+        --disablerepo=* \
+        --enablerepo=rhel-9-for-x86_64-baseos-rpms \
+        autofs \
+        nfs-utils \
+        && dnf clean all
+
+CMD ["sleep", "1d"]
