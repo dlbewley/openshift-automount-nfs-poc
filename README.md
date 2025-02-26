@@ -1,3 +1,5 @@
+[![asciicast](https://asciinema.org/a/705560.svg)](https://asciinema.org/a/705560)
+
 # Automounting NFS on OpenShift
 
 This *proof of concept* shows how to automount NFS shares on OpenShift.
